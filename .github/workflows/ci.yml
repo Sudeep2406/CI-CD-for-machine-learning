@@ -21,6 +21,11 @@ jobs:
         run: make format
       - name: Train
         run: make train
+      - name: Upload model artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: trained-model
+          path: model/my_model.pkl
       - name: Evaluation
         env:
           REPO_TOKEN: ${{ secrets.SECRET_TOKEN }}

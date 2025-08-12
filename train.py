@@ -60,4 +60,4 @@ import skops.io as sio
 
 sio.dump(pipe, "model/drug_pipeline.skops")
 
-sio.load("model/drug_pipeline.skops")
+# sio.load("model/drug_pipeline.skops")
